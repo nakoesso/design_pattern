@@ -10,7 +10,7 @@ public class PaymentContext {
 
     void executePayement(){
         if (payStrategy == null){
-            System.out.println("Aucun moyen de payement n'a ete defini");
+            System.err.println("Aucun moyen de payement n'a ete defini");
             return;
         }
         payStrategy.pay();

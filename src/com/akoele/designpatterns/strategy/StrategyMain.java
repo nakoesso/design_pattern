@@ -11,5 +11,8 @@ public class StrategyMain {
 
         paymentContext.setStrategy(null);
         paymentContext.executePayement();
+
+        paymentContext.setStrategy(new CustomPayment());
+        paymentContext.executePayement();
     }
 }
